@@ -1,14 +1,12 @@
-version: "3.8"
-
 services:
   postgres:
     image: postgres:17-alpine
     container_name: rocketseat-prompt-manager-db
-    restart: unless-stopped
+    restart: always
 
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: passw0rd
+      POSTGRES_USER: prompt_manager
+      POSTGRES_PASSWORD: Pass300!
       POSTGRES_DB: rocketseat_prompt_manager
 
     ports:
