@@ -5,12 +5,12 @@ services:
     restart: always
 
     environment:
-      POSTGRES_USER: prompt_manager
-      POSTGRES_PASSWORD: Pass300!
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
       POSTGRES_DB: rocketseat_prompt_manager
 
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
     volumes:
       - postgres_data:/var/lib/postgresql/data
