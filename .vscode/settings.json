@@ -1,3 +1,8 @@
 {
-  "cSpell.words": ["cuid"]
+  "cSpell.words": ["cuid"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
 }
